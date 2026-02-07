@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <title>CSS Theme Switcher</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --page-bg: #f5f5f5;
+      --text-main: #222;
+      --card-bg: #ffffff;
+      --accent: #0066cc;
+    }
+
+
+    .night-mode {
+      --page-bg: #1a1a1a;
+      --text-main: #eeeeee;
+      --card-bg: #333333;
+      --accent: #ff9800;
+    }
+
+    body {
+      background-color: var(--page-bg);
+      color: var(--text-main);
+      font-family: Verdana, sans-serif;
+      padding: 25px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--accent);
+    }
+
+    .switch-btn {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 10px 18px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CSS Variable Theme Switcher</h2>
+
+  <div class="card">
+    This card changes its colors automatically
+    when the theme is switched.
+  </div>
+
+  <button class="switch-btn" onclick="changeTheme()">
+    Change Theme
+  </button>
+
+  <script>
+    function changeTheme() {
+      document.body.classList.toggle("night-mode");
+    }
+  </script>
+
+</body>
+
+</html>

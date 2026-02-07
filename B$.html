@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>CSS calc() Function Example</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      border: 2px solid #444;
+      padding: 15px;
+    }
+
+    .content-box {
+      height: 80px;
+      background-color: lightgreen;
+
+
+      width: calc(100% - 150px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Using CSS calc() for Dynamic Width</h3>
+
+  <div class="wrapper">
+    <div class="content-box">
+      Dynamic width using calc()
+    </div>
+  </div>
+
+</body>
+
+</html>

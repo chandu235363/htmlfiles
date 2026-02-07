@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Accessible Web Elements</title>
+
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border: 2px solid #333;
+      font-size: 16px;
+    }
+
+    input:focus {
+      outline: 4px solid orange;
+      outline-offset: 3px;
+      background-color: #fffbe6;
+    }
+
+
+    .content {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: black;
+      color: yellow;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Keyboard Accessibility Example</h2>
+
+  <label>
+    Username:
+    <br>
+    <input type="text" placeholder="Use Tab to focus">
+  </label>
+
+  <div class="content">
+    This section uses high color contrast to help users
+    with low vision read the content easily.
+  </div>
+
+</body>
+
+</html>
